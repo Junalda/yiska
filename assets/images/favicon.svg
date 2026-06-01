@@ -1,12 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Yiska Cleaning">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Yiska Cleaning VOF">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#45a4ec"/>
-      <stop offset="0.65" stop-color="#1577c2"/>
-      <stop offset="1" stop-color="#3fa23f"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2c4d"/>
+      <stop offset="1" stop-color="#06223d"/>
     </linearGradient>
+    <linearGradient id="drop" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#7fd0ff"/>
+      <stop offset="0.5" stop-color="#2b8ff0"/>
+      <stop offset="1" stop-color="#1366c4"/>
+    </linearGradient>
+    <linearGradient id="swoosh" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#93d84e"/>
+      <stop offset="1" stop-color="#43ad46"/>
+    </linearGradient>
+    <clipPath id="dropClip">
+      <path d="M32 7c0 0 16 18 16 27a16 16 0 0 1-32 0C16 25 32 7 32 7z"/>
+    </clipPath>
   </defs>
-  <rect width="64" height="64" rx="14" fill="#06223d"/>
-  <path d="M32 10s16 17.5 16 28a16 16 0 0 1-32 0C16 27.5 32 10 32 10z" fill="url(#g)"/>
-  <path d="M26 30c-3 4-3 9 1 12" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Navy rounded tile -->
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+
+  <!-- Green swoosh (logo accent) -->
+  <path d="M9 41c10 9 36 9 46 0" fill="none" stroke="url(#swoosh)" stroke-width="4.5" stroke-linecap="round" opacity="0.95"/>
+
+  <!-- Water droplet -->
+  <path d="M32 7c0 0 16 18 16 27a16 16 0 0 1-32 0C16 25 32 7 32 7z" fill="url(#drop)"/>
+
+  <!-- City skyline + house inside droplet -->
+  <g clip-path="url(#dropClip)" fill="#ffffff" opacity="0.92">
+    <rect x="22" y="34" width="4.5" height="11"/>
+    <rect x="27" y="30" width="4" height="15"/>
+    <rect x="35" y="32" width="4.5" height="13"/>
+    <path d="M40 45V34l4-3 4 3v11z"/>
+    <path d="M18 45v-7l4-3 4 3v7z"/>
+  </g>
+
+  <!-- Highlight + sparkle -->
+  <path d="M26 18c-3 4-4 8-3 12" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" opacity="0.55"/>
+  <path d="M44 16l1.2 3 3 1.2-3 1.2L44 25l-1.2-3-3-1.2 3-1.2z" fill="#ffffff" opacity="0.85"/>
 </svg>

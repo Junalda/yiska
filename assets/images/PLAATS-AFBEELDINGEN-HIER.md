@@ -24,35 +24,44 @@ handmatig in deze map worden gezet (via een commit/upload naar de repo). Omdat
 de bestandsnamen al overal in de HTML staan, hoeft er verder niets aangepast te
 worden — de placeholders verdwijnen automatisch zodra de bestanden aanwezig zijn.
 
-## Logo: van JPG naar web-klare PNG + favicons
-Het aangeleverde logo is een JPG met witte achtergrond. Zet het eenmalig om naar
-een transparante, geoptimaliseerde PNG en genereer de favicons. De website
-verwijst al naar `logo.png` (header, footer, `apple-touch-icon`, Open Graph) en
-naar `favicon.svg` (browser-tab — al meegeleverd en scherp op elk scherm).
+## Logo: van JPG naar web-klare PNG + favicons (geautomatiseerd)
+Het aangeleverde logo is een JPG met witte achtergrond. In de repo zit een kant-
+en-klaar script dat hiervan alle benodigde, transparante, geoptimaliseerde
+assets maakt — met **randbehoud van witte details binnen het logo** (wolkjes,
+sparkles en de witte "Yiska"-letters blijven staan; alleen de buitenste witte
+achtergrond wordt transparant).
 
-**Snelste route (online, geen installatie):**
-1. Achtergrond verwijderen → https://www.remove.bg of https://www.photoroom.com
-2. Optimaliseren → https://squoosh.app (exporteer als PNG, ~1000 px breed) → opslaan als `logo.png`
-3. Favicons genereren → https://realfavicongenerator.net of https://favicon.io
-   en de uitvoer (o.a. `apple-touch-icon.png`, `favicon-32x32.png`) in deze map zetten.
-
-**Of via de command line (ImageMagick):**
+**Aanpak:**
 ```bash
-# witte achtergrond transparant maken + bijsnijden
-magick logo.jpg -fuzz 8% -transparent white -trim +repage logo-trim.png
-# optimaliseren naar webformaat (max 1000 px breed)
-magick logo-trim.png -resize 1000x logo.png
-# favicons
-magick logo.png -resize 180x180 apple-touch-icon.png
-magick logo.png -resize 512x512 logo-512.png
-```
-De meegeleverde `favicon.svg` (vector, transparant, retina-scherp) hoeft niet
-vervangen te worden; vervang die alleen als je een exacte 1:1 kopie van het logo
-als favicon wilt.
+# eenmalig de beeldbibliotheken installeren
+pip install Pillow numpy scipy
 
-> **Tip (Open Graph):** voor mooie social-previews kun je later een
-> `og-image.jpg` van 1200×630 px toevoegen en in de `<meta property="og:image">`
-> tags zetten. Nu staat daar `logo.png`, wat ook werkt.
+# logo-assets genereren uit jouw JPG
+python3 tools/build_logo.py pad/naar/jouw-logo.jpg
+```
+
+Het script schrijft naar `assets/images/`:
+
+| Bestand                 | Formaat            | Gebruik |
+|-------------------------|--------------------|---------|
+| `logo.png`              | transparant, ≤1024 px breed | header + footer (alle pagina's) |
+| `logo-512.png`          | 512×512, transparant | algemeen / social / app |
+| `logo-1024.png`         | 1024×1024, transparant | hoge resolutie / retina |
+| `apple-touch-icon.png`  | 180×180, navy (dekkend) | iOS-snelkoppeling |
+| `favicon.ico`           | 16/32/48, transparant | browser-tab (oudere browsers) |
+
+De website verwijst al naar deze bestanden:
+- `<link rel="icon" href="favicon.svg">` (vector, primair — al meegeleverd)
+- `<link rel="icon" href="favicon.ico">` (fallback)
+- `<link rel="apple-touch-icon" href="apple-touch-icon.png">`
+- header/footer/Open Graph → `logo.png`
+
+Zodra je het script draait verschijnen de bestanden en is alles meteen actief —
+geen HTML-aanpassingen nodig.
+
+> **Tip (Open Graph):** voor nóg mooiere social-previews kun je later een
+> `og-image.jpg` van 1200×630 px toevoegen in de `<meta property="og:image">`
+> tags. Nu staat daar `logo.png`, wat ook prima werkt.
 
 ## Aanbevelingen
 - **Logo**: lever bij voorkeur een transparante PNG (of SVG) aan.

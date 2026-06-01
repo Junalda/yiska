@@ -75,3 +75,29 @@ Open `index.html` in de browser, of start een lokale server:
 python3 -m http.server 8000
 # → http://localhost:8000
 ```
+
+## Deployen op Vercel (statische site — GEEN build)
+Dit is een statische site zonder build-stap. Er is **geen** `package.json`,
+Vite, npm of andere bundler nodig.
+
+De meegeleverde `vercel.json` zet dit expliciet vast, zodat Vercel niets
+probeert te builden:
+```json
+{
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "."
+}
+```
+
+**Als de deploy nog steeds `vite build` draait**, staat er nog een override in
+het Vercel-dashboard. Zet daar (Project → Settings → Build & Development
+Settings):
+- **Framework Preset**: `Other`
+- **Build Command**: leeg laten (override uitschakelen)
+- **Output Directory**: leeg laten / `.` (override uitschakelen)
+- **Install Command**: leeg laten
+
+Daarna opnieuw deployen. De site wordt dan rechtstreeks vanuit de repo-root
+geserveerd (`index.html` als startpagina).

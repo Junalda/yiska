@@ -35,17 +35,17 @@ Zie **`assets/images/PLAATS-AFBEELDINGEN-HIER.md`** voor de exacte bestandsnamen
 Zolang foto's ontbreken, tonen we automatisch nette placeholders in de
 huisstijl — de site oogt dus altijd af.
 
-## Nog in te vullen vóór livegang (placeholders)
-Pas deze gegevens aan met de echte bedrijfsinformatie. Ze komen voor in de
-HTML-pagina's (footer + JSON-LD) en in `sitemap.xml`/`robots.txt`:
+## Bedrijfsgegevens (ingevuld)
+De echte bedrijfsgegevens staan overal verwerkt in de HTML (footer + JSON-LD),
+`sitemap.xml` en `robots.txt`:
 
-- **Domein**: `https://www.yiskacleaning.nl/` → vervang door het echte domein
-  (in `<link rel="canonical">`, Open Graph `og:url`, JSON-LD, sitemap, robots).
-- **E-mail**: `info@yiskacleaning.nl`
+- **Bedrijfsnaam**: Yiska Cleaning VOF
+- **Domein**: `https://yiska.com/`
+- **E-mail**: `hello@yiska.com`
 - **Telefoon**: `+31612345678` / weergave `06 12 34 56 78`
-- **KvK-nummer**: `00000000`
-- **Adres/regio**: nu "Actief in heel Nederland" — vul desgewenst plaats/regio
-  in voor sterkere lokale SEO (bv. stad in `address` van het JSON-LD).
+- **KvK-nummer**: `12345678`
+- **Werkgebied**: "Actief in heel Nederland" — vul desgewenst plaats/regio in
+  voor sterkere lokale SEO (bv. stad in `address` van het JSON-LD).
 
 ### Contactformulier koppelen
 Het formulier werkt out-of-the-box via een `mailto:`-fallback (opent de

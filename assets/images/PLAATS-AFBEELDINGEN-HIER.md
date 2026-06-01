@@ -10,11 +10,19 @@ aangepast hoeft te worden.
 
 | Bestandsnaam                  | Welke aangeleverde foto                                              | Waar gebruikt |
 |-------------------------------|---------------------------------------------------------------------|---------------|
-| `logo.png`                    | Het Yiska Cleaning VOF logo (druppel + sprayfles)                   | Header + footer (alle pagina's) |
-| `hero-glasbewassing.jpg`      | Medewerker die de winkelpui/ramen wast                              | Hero homepage, Diensten (glasbewassing), Voor Bedrijven |
+| `logo.png`                    | Het Yiska Cleaning VOF logo (druppel + sprayfles)                  | Header + footer (alle pagina's) |
+| `hero-glasbewassing.jpg`      | Medewerker (van achteren) die de winkelpui/ramen wast met wasser   | Hero homepage, Diensten (glasbewassing) |
+| `glasbewassing-2.jpg`         | Medewerker (van voren) die geconcentreerd de ruit wast             | Voor Bedrijven (waarom-sectie) |
 | `vloeronderhoud-rood.jpg`     | De glanzende **rode** sport-/gymvloer                              | Homepage, Diensten (bedrijfsschoonmaak/contract), Over Yiska |
 | `vloeronderhoud-blauw.jpg`    | De **blauwe** vloer in de schoolgang                               | Diensten (kantoorschoonmaak + vloeronderhoud) |
 | `team-yiska.jpg`              | De foto van het koppel (oprichters)                                | Over Yiska |
+
+## Belangrijk
+Door de webomgeving komen geüploade foto's wél in de chat te staan, maar **niet
+als bestand in de repository**. De bestanden hierboven moeten daarom éénmalig
+handmatig in deze map worden gezet (via een commit/upload naar de repo). Omdat
+de bestandsnamen al overal in de HTML staan, hoeft er verder niets aangepast te
+worden — de placeholders verdwijnen automatisch zodra de bestanden aanwezig zijn.
 
 ## Aanbevelingen
 - **Logo**: lever bij voorkeur een transparante PNG (of SVG) aan.

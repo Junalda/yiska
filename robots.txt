@@ -17,4 +17,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://www.yiskacleaning.nl/sitemap.xml
+Sitemap: https://yiska.com/sitemap.xml

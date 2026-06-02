@@ -356,6 +356,20 @@ p { margin: 0 0 1em; }
 .card__icon--green { background: linear-gradient(160deg, var(--green-100), #fff); color: var(--green); }
 .card .link-arrow { margin-top: 14px; }
 
+/* Icon-free editorial cards (numbered, content-first) */
+.card--index { padding: 36px 34px; display: flex; flex-direction: column; }
+@media (max-width: 620px) { .card--index { padding: 30px 26px; } }
+.card__index {
+  display: block; font-size: .9rem; font-weight: 700; letter-spacing: .16em;
+  background: var(--grad-text); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  padding-bottom: 16px; margin-bottom: 20px; border-bottom: 1px solid var(--line);
+}
+.card--index h3 { font-size: clamp(1.25rem, 1.7vw, 1.45rem); margin-bottom: .5em; letter-spacing: -.02em; }
+.card--index p { color: var(--muted); margin: 0; }
+.card--index .card__more { margin-top: auto; padding-top: 20px; font-weight: 600; }
+.card--index .card__more a { color: var(--brand-700); }
+.card--index .card__more a:hover { color: var(--brand); }
+
 /* Why-list */
 .why-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
 .why-list li { display: flex; gap: 14px; align-items: flex-start; }

@@ -37,13 +37,16 @@
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
-  /* ----- Image fallback: hide broken images, reveal text fallback ----- */
+  /* ----- Image fallback: hide broken images, reveal branded fallback ----- */
   document.querySelectorAll("img[data-fallback]").forEach(function (img) {
-    img.addEventListener("error", function () {
+    var apply = function () {
       var fb = document.querySelector(img.getAttribute("data-fallback"));
       img.style.display = "none";
       if (fb) fb.style.display = "";
-    });
+    };
+    img.addEventListener("error", apply);
+    // Catch images that already failed before this handler was attached (deferred script)
+    if (img.complete && img.naturalWidth === 0) apply();
   });
 
   /* ----- Contact form (front-end only; wire to a real endpoint in production) ----- */
@@ -84,4 +87,15 @@
   /* ----- Footer year ----- */
   var yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
+
+  /* ----- Header elevation on scroll ----- */
+  var header = document.querySelector(".site-header");
+  if (header) {
+    var onScroll = function () {
+      if (window.scrollY > 8) header.classList.add("is-scrolled");
+      else header.classList.remove("is-scrolled");
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
 })();

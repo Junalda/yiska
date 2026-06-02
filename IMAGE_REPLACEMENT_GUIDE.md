@@ -29,11 +29,15 @@ cartoons, geen stockfoto's, geen lege vlakken).
 
 ## 📋 Overzicht van alle placeholders
 
+Nog actief als placeholder (vervangen wanneer een echte foto beschikbaar is):
+
 | # | Placeholder-bestand | Waar gebruikt (pagina → sectie) | Vervang door — definitieve Yiska-foto |
 |---|---------------------|----------------------------------|----------------------------------------|
-| 1 | `hero-placeholder.jpg` | **index.html** → hero (homepage) | Sterkste actiefoto: medewerker die de winkelpui/ramen wast (glasbewassing) |
-| 2 | `commercial-cleaning-placeholder.jpg` | **index.html** → "Voor wie wij werken" | Gereinigde bedrijfsruimte / commerciële vloer |
-| 3 | `contact-placeholder.jpg` | **contact.html** → "Direct contact" | Uitnodigende team-/locatiefoto of bedrijfspand |
+| 1 | `contact-placeholder.jpg` | **contact.html** → "Direct contact" | Uitnodigende team-/locatiefoto of bedrijfspand |
+
+> De homepage gebruikt nu echte foto's: `homepage-hero-yiska.jpg` (hero) en
+> `homepage-business-yiska.jpg` ("Voor wie wij werken"). De placeholders
+> `hero-placeholder.jpg` en `commercial-cleaning-placeholder.jpg` zijn verwijderd.
 
 ### Eigen foto's met definitieve bestandsnamen (geen "placeholder" in de naam)
 Op **over-yiska.html** verwijzen de twee beeldslots naar vaste, semantische

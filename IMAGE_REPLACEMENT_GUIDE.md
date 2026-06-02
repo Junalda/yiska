@@ -34,10 +34,22 @@ cartoons, geen stockfoto's, geen lege vlakken).
 | 1 | `hero-placeholder.jpg` | **index.html** → hero (homepage) | Sterkste actiefoto: medewerker die de winkelpui/ramen wast (glasbewassing) |
 | 2 | `office-cleaning-placeholder.jpg` | **diensten.html** → Kantoorschoonmaak + Vloeronderhoud | Foto van schone kantoor-/schoolruimte of vloeronderhoud (blauwe vloer) |
 | 3 | `glass-cleaning-placeholder.jpg` | **diensten.html** → Glasbewassing | Close-up glazenwasser met wasser op steel (raam/gevel) |
-| 4 | `commercial-cleaning-placeholder.jpg` | **index.html** → "Voor wie wij werken"; **diensten.html** → Bedrijfsschoonmaak; **over-yiska.html** → Belofte | Gereinigde bedrijfsruimte / commerciële vloer (rode gymvloer) |
-| 5 | `about-placeholder.jpg` | **over-yiska.html** → "Ons verhaal" (team) | Teamfoto / oprichters van Yiska Cleaning |
-| 6 | `business-placeholder.jpg` | **diensten.html** → Schoonmaakcontract; **voor-bedrijven.html** → "Waarom kiezen" | Zakelijke schoonmaak op locatie / glazenwasser bij bedrijfspand |
-| 7 | `contact-placeholder.jpg` | **contact.html** → "Direct contact" | Uitnodigende team-/locatiefoto of bedrijfspand |
+| 4 | `commercial-cleaning-placeholder.jpg` | **index.html** → "Voor wie wij werken"; **diensten.html** → Bedrijfsschoonmaak | Gereinigde bedrijfsruimte / commerciële vloer (rode gymvloer) |
+| 5 | `business-placeholder.jpg` | **diensten.html** → Schoonmaakcontract; **voor-bedrijven.html** → "Waarom kiezen" | Zakelijke schoonmaak op locatie / glazenwasser bij bedrijfspand |
+| 6 | `contact-placeholder.jpg` | **contact.html** → "Direct contact" | Uitnodigende team-/locatiefoto of bedrijfspand |
+
+### Eigen foto's met definitieve bestandsnamen (geen "placeholder" in de naam)
+Op **over-yiska.html** verwijzen de twee beeldslots naar vaste, semantische
+bestandsnamen. Plaats hier je eigen foto's met exact deze namen:
+
+| Bestand | Pagina → sectie | Foto | Aanbevolen formaat |
+|---------|------------------|------|--------------------|
+| `over-eigenaren.jpg` | **over-yiska.html** → "Ons verhaal" (1e beeld) | De **eigenaren** van Yiska (de foto van het koppel) | ~1600×1200 (4:3), gezichten gecentreerd |
+| `over-team.jpg` | **over-yiska.html** → "Onze belofte" (2e beeld) | Het **team** aan het werk (glazenwasser in restaurant) | ~1600×1200 (4:3) |
+
+> `about-placeholder.jpg` wordt nu nergens meer gebruikt en mag verwijderd worden.
+> Tot `over-eigenaren.jpg` / `over-team.jpg` aanwezig zijn, toont de site een
+> nette, gemerkte placeholder met het juiste label (geen gebroken afbeelding).
 
 ---
 

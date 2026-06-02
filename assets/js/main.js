@@ -42,7 +42,7 @@
     var apply = function () {
       var fb = document.querySelector(img.getAttribute("data-fallback"));
       img.style.display = "none";
-      if (fb) fb.style.display = "";
+      if (fb) fb.style.display = "block"; // override the CSS `display:none` on .ph / fallback
     };
     img.addEventListener("error", apply);
     // Catch images that already failed before this handler was attached (deferred script)

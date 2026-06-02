@@ -46,6 +46,7 @@ bestandsnamen. Plaats hier je eigen foto's met exact deze namen:
 |---------|------------------|------|--------------------|
 | `over-eigenaren.jpg` | **over-yiska.html** → "Ons verhaal" (1e beeld) | De **eigenaren** van Yiska (de foto van het koppel) | ~1600×1200 (4:3), gezichten gecentreerd |
 | `over-team.jpg` | **over-yiska.html** → "Onze belofte" (2e beeld) | Het **team** aan het werk (glazenwasser in restaurant) | ~1600×1200 (4:3) |
+| `business-clients-yiska.jpg` | **voor-bedrijven.html** → "Waarom bedrijven kiezen voor Yiska" | Zakelijke schoonmaak voor bedrijven (klant-/locatiefoto) | ~1600×1200 (4:3) |
 
 > `about-placeholder.jpg` wordt nu nergens meer gebruikt en mag verwijderd worden.
 > Tot `over-eigenaren.jpg` / `over-team.jpg` aanwezig zijn, toont de site een

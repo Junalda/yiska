@@ -32,11 +32,8 @@ cartoons, geen stockfoto's, geen lege vlakken).
 | # | Placeholder-bestand | Waar gebruikt (pagina → sectie) | Vervang door — definitieve Yiska-foto |
 |---|---------------------|----------------------------------|----------------------------------------|
 | 1 | `hero-placeholder.jpg` | **index.html** → hero (homepage) | Sterkste actiefoto: medewerker die de winkelpui/ramen wast (glasbewassing) |
-| 2 | `office-cleaning-placeholder.jpg` | **diensten.html** → Kantoorschoonmaak + Vloeronderhoud | Foto van schone kantoor-/schoolruimte of vloeronderhoud (blauwe vloer) |
-| 3 | `glass-cleaning-placeholder.jpg` | **diensten.html** → Glasbewassing | Close-up glazenwasser met wasser op steel (raam/gevel) |
-| 4 | `commercial-cleaning-placeholder.jpg` | **index.html** → "Voor wie wij werken"; **diensten.html** → Bedrijfsschoonmaak | Gereinigde bedrijfsruimte / commerciële vloer (rode gymvloer) |
-| 5 | `business-placeholder.jpg` | **diensten.html** → Schoonmaakcontract; **voor-bedrijven.html** → "Waarom kiezen" | Zakelijke schoonmaak op locatie / glazenwasser bij bedrijfspand |
-| 6 | `contact-placeholder.jpg` | **contact.html** → "Direct contact" | Uitnodigende team-/locatiefoto of bedrijfspand |
+| 2 | `commercial-cleaning-placeholder.jpg` | **index.html** → "Voor wie wij werken" | Gereinigde bedrijfsruimte / commerciële vloer |
+| 3 | `contact-placeholder.jpg` | **contact.html** → "Direct contact" | Uitnodigende team-/locatiefoto of bedrijfspand |
 
 ### Eigen foto's met definitieve bestandsnamen (geen "placeholder" in de naam)
 Op **over-yiska.html** verwijzen de twee beeldslots naar vaste, semantische
@@ -47,10 +44,16 @@ bestandsnamen. Plaats hier je eigen foto's met exact deze namen:
 | `over-eigenaren.jpg` | **over-yiska.html** → "Ons verhaal" (1e beeld) | De **eigenaren** van Yiska (de foto van het koppel) | ~1600×1200 (4:3), gezichten gecentreerd |
 | `over-team.jpg` | **over-yiska.html** → "Onze belofte" (2e beeld) | Het **team** aan het werk (glazenwasser in restaurant) | ~1600×1200 (4:3) |
 | `business-clients-yiska.jpg` | **voor-bedrijven.html** → "Waarom bedrijven kiezen voor Yiska" | Zakelijke schoonmaak voor bedrijven (klant-/locatiefoto) | ~1600×1200 (4:3) |
+| `office-cleaning-yiska.jpg` | **diensten.html** → Kantoorschoonmaak | ✅ geplaatst (3:2) |
+| `glass-cleaning-yiska.jpg` | **diensten.html** → Glasbewassing | ✅ geplaatst (3:2) |
+| `commercial-cleaning-yiska.jpg` | **diensten.html** → Bedrijfsschoonmaak | ✅ geplaatst (3:2) |
+| `facility-cleaning-yiska.jpg` | **diensten.html** → Vloeronderhoud | ✅ geplaatst (3:2) |
+| `team-at-work-yiska.jpg` | **diensten.html** → Schoonmaakcontracten | ✅ geplaatst (3:2) |
 
-> `about-placeholder.jpg` wordt nu nergens meer gebruikt en mag verwijderd worden.
-> Tot `over-eigenaren.jpg` / `over-team.jpg` aanwezig zijn, toont de site een
-> nette, gemerkte placeholder met het juiste label (geen gebroken afbeelding).
+> Reeds verwijderd (niet meer in gebruik): `about-placeholder.jpg`,
+> `office-cleaning-placeholder.jpg`, `glass-cleaning-placeholder.jpg`,
+> `business-placeholder.jpg`. Nog actief als placeholder: `hero-placeholder.jpg`,
+> `commercial-cleaning-placeholder.jpg`, `contact-placeholder.jpg`.
 
 ---
 

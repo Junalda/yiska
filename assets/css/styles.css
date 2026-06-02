@@ -61,7 +61,7 @@
   --maxw: 1180px;
   --maxw-wide: 1320px;
   --gut: clamp(20px, 5vw, 48px);
-  --nav-h: 74px;
+  --nav-h: 88px;
 }
 
 /* ----- Reset ----- */
@@ -179,8 +179,8 @@ p { margin: 0 0 1em; }
 }
 .nav { display: flex; align-items: center; gap: 22px; height: var(--nav-h); }
 .nav__brand { display: flex; align-items: center; margin-right: auto; }
-.nav__brand img { height: 46px; width: auto; max-width: 190px; display: block; }
-@media (max-width: 480px) { .nav__brand img { height: 40px; max-width: 150px; } }
+.nav__brand img { height: 62px; width: auto; max-width: 220px; display: block; }
+@media (max-width: 480px) { .nav__brand img { height: 50px; max-width: 170px; } }
 .nav__brand-fallback { font-weight: 800; font-size: 1.15rem; letter-spacing: -.02em; color: var(--ink); }
 .nav__brand-fallback span { color: var(--green); }
 

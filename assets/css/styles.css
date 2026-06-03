@@ -403,14 +403,10 @@ body:has(.hero) .site-header:not(.is-scrolled) {
 .card--link:hover .card__more { color: var(--brand); }
 @media (max-width: 620px) { .card--link { padding: 30px 26px; } }
 
-/* Aurora-tegels: zachte hero-achtergrond (zoals de eerste sectie van de homepage) */
+/* Aurora-tegels -> nu effen wit (Wie wij helpen) */
 .card--aurora {
   padding: 34px;
-  background:
-    radial-gradient(90% 90% at 12% 6%, rgba(52, 182, 236, .16), transparent 60%),
-    radial-gradient(85% 85% at 100% 100%, rgba(47, 174, 74, .13), transparent 60%),
-    radial-gradient(80% 80% at 65% 0%, rgba(20, 102, 216, .10), transparent 60%),
-    #ffffff;
+  background: #ffffff;
   border: 1px solid var(--line);
 }
 .card--aurora p { color: var(--muted); margin: 0; }

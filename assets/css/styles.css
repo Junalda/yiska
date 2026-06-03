@@ -177,6 +177,14 @@ p { margin: 0 0 1em; }
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom-color: var(--line);
 }
+/* Homepage: header versmelt met de hero bovenaan (transparant), ook op mobiel.
+   Bij scrollen wint .is-scrolled en wordt het glas-effect getoond. */
+body:has(.hero) .site-header:not(.is-scrolled) {
+  background: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  border-bottom-color: transparent;
+}
 .nav { display: flex; align-items: center; gap: 22px; height: var(--nav-h); }
 .nav__brand { display: flex; align-items: center; margin-right: auto; }
 .nav__brand img { height: 62px; width: auto; max-width: 220px; display: block; }
@@ -216,7 +224,7 @@ p { margin: 0 0 1em; }
 /* ==========================================================================
    Hero (home)
    ========================================================================== */
-.hero { position: relative; overflow: hidden; isolation: isolate; }
+.hero { position: relative; overflow: hidden; isolation: isolate; margin-top: calc(var(--nav-h) * -1); padding-top: var(--nav-h); }
 .hero::before {
   content: ""; position: absolute; inset: -20% -10% auto -10%; height: 120%; z-index: -2;
   background:
@@ -233,7 +241,7 @@ p { margin: 0 0 1em; }
   mask-image: radial-gradient(120% 80% at 50% 0%, #000 35%, transparent 75%);
   opacity: .5;
 }
-.hero__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(32px, 5vw, 72px); align-items: center; padding-block: clamp(56px, 8vw, 120px); }
+.hero__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(32px, 5vw, 72px); align-items: center; padding-block: clamp(28px, 4vw, 56px) clamp(56px, 8vw, 120px); }
 .hero__title { margin-bottom: 22px; }
 .hero__sub { font-size: clamp(1.12rem, 1.7vw, 1.4rem); color: var(--muted); max-width: 40ch; line-height: 1.55; }
 .hero__cta { margin-top: 34px; }

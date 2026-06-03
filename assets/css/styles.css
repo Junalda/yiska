@@ -393,6 +393,14 @@ body:has(.hero) .site-header:not(.is-scrolled) {
 .card--filled:hover { box-shadow: var(--sh-lg); }
 @media (max-width: 620px) { .card--filled { padding: 28px 26px; } }
 
+/* Volledig klikbare tegels (Onze Diensten op de homepage) */
+.card--link { padding: 36px 34px; display: flex; flex-direction: column; text-decoration: none; }
+.card--link h3 { font-size: clamp(1.25rem, 1.7vw, 1.45rem); margin-bottom: .5em; letter-spacing: -.02em; color: var(--ink); }
+.card--link p { color: var(--muted); margin: 0; }
+.card--link .card__more { margin-top: auto; padding-top: 20px; font-weight: 600; color: var(--brand-700); transition: color .2s, letter-spacing .2s; }
+.card--link:hover .card__more { color: var(--brand); }
+@media (max-width: 620px) { .card--link { padding: 30px 26px; } }
+
 /* Why-list */
 .why-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
 .why-list li { display: flex; gap: 14px; align-items: flex-start; }

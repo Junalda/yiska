@@ -379,6 +379,20 @@ body:has(.hero) .site-header:not(.is-scrolled) {
 .card--index .card__more a { color: var(--brand-700); }
 .card--index .card__more a:hover { color: var(--brand); }
 
+/* Gevulde tegels (Waarom Yiska): volledige merk-designkleur, witte tekst */
+.card--filled {
+  padding: 34px;
+  background: var(--grad-brand);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: var(--sh-md);
+}
+.card--filled::before { content: none; }
+.card--filled h3 { color: #fff; }
+.card--filled p { color: rgba(255, 255, 255, .92); margin: 0; }
+.card--filled:hover { box-shadow: var(--sh-lg); }
+@media (max-width: 620px) { .card--filled { padding: 28px 26px; } }
+
 /* Why-list */
 .why-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
 .why-list li { display: flex; gap: 14px; align-items: flex-start; }

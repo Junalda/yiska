@@ -541,3 +541,6 @@ body:has(.hero) .site-header:not(.is-scrolled) {
 
 .mt-0 { margin-top: 0; }
 .center { text-align: center; }
+
+/* Homepage dienstenkop op één regel vanaf tablet/desktop */
+@media (min-width: 760px) { #diensten-h { white-space: nowrap; } }

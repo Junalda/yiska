@@ -70,7 +70,7 @@
         "Dienst: " + decodeURIComponent(dienst) + "%0D%0A%0D%0A" +
         decodeURIComponent(bericht);
 
-      var to = form.getAttribute("data-mailto") || "hello@yiska.com";
+      var to = form.getAttribute("data-mailto") || "hello@yiska.org";
       var subject = encodeURIComponent("Offerteaanvraag via website — " + decodeURIComponent(bedrijf || naam));
 
       var status = document.getElementById("form-status");

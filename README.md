@@ -41,9 +41,9 @@ De echte bedrijfsgegevens staan overal verwerkt in de HTML (footer + JSON-LD),
 
 - **Bedrijfsnaam**: Yiska Cleaning VOF
 - **Domein**: `https://yiska.com/`
-- **E-mail**: `hello@yiska.com`
-- **Telefoon**: `+31612345678` / weergave `06 12 34 56 78`
-- **KvK-nummer**: `12345678`
+- **E-mail**: `hello@yiska.org`
+- **Telefoon**: `+31614265377` / weergave `06 14 26 53 77`
+- **KvK-nummer**: `99892421`
 - **Werkgebied**: "Actief in heel Nederland" — vul desgewenst plaats/regio in
   voor sterkere lokale SEO (bv. stad in `address` van het JSON-LD).
 
